@@ -1,0 +1,3 @@
+./server/node modules
+.env
+api.http
