@@ -43,38 +43,35 @@ export default function InvitePage() {
             </IconButton>
           </InputRoot>
 
-          <div className="grid gap-3 md:grid-cols-3">
-            <div className="relative bg-gray-700border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1 rounded-xl ">
+          <div className="grid md:grid-cols-3 gap-3">
+            <div className="relative rounded-xl bg-gray-700 border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1">
               <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
                 1042
               </span>
-              <span className="text-sm text-gray-300 leading-none text-center ">
-                Acesso ao Link
+              <span className="text-sm text-gray-300 leading-none text-center">
+                Acessos ao link
               </span>
+              <MousePointerClick className="size-5 text-purple top-3 left-3 absolute" />
+            </div>
 
-              <BadgeCheck className="size-5 text-p text-purple absolute top-3 left-3" />
-            </div>
-          </div>
-          <div className="grid gap-3 md:grid-cols-3">
-            <div className="relative bg-gray-700border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1 rounded-xl ">
+            <div className="relative rounded-xl bg-gray-700 border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1">
               <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-                50
+                1042
               </span>
-              <span className="text-sm text-gray-300 leading-none text-center ">
-                Inscrições feitas!
+              <span className="text-sm text-gray-300 leading-none text-center">
+                Inscrições feitas
               </span>
-              <Medal className="size-5 text-p text-purple absolute top-3 left-3" />
+              <BadgeCheck className="size-5 text-purple top-3 left-3 absolute" />
             </div>
-          </div>
-          <div className="grid gap-3 md:grid-cols-3">
-            <div className="relative bg-gray-700border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1 rounded-xl ">
+
+            <div className="relative rounded-xl bg-gray-700 border border-gray-600 px-4 py-7 flex flex-col items-center justify-center gap-1">
               <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-                3°
+                3&ordm;
               </span>
-              <span className="text-sm text-gray-300 leading-none text-center ">
+              <span className="text-sm text-gray-300 leading-none text-center">
                 Posição no ranking
               </span>
-              <MousePointerClick className="size-5 text-p text-purple absolute top-3 left-3" />
+              <Medal className="size-5 text-purple top-3 left-3 absolute" />
             </div>
           </div>
         </div>
