@@ -30,4 +30,3 @@ GET http://localhost:3333/ranking
 ###
 
 POST http://localhost:3333/sendMessage
-

@@ -1,7 +1,6 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { z } from 'zod'
-import SendMessageService from '../service/SendMessageService'
-
+import { sendMessageService } from '../service/SendMessageService'
 export const sendMessageRoute: FastifyPluginAsyncZod = async app => {
   app.post(
     '/sendMessage',
@@ -17,15 +16,13 @@ export const sendMessageRoute: FastifyPluginAsyncZod = async app => {
       },
     },
     async (request, reply) => {
-      const funcionou = 'Ok: enviado'
+      const funcionou = 'email enviado'
 
-      const sendMessage = new SendMessageService()
+      const sendEmail = await sendMessageService()
 
-      await sendMessage.run()
+      console.log(sendEmail)
 
-      return reply.status(201).send({
-        funcionou,
-      })
+      return reply.status(201).send({ funcionou })
     }
   )
 }
