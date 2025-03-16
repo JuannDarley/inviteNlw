@@ -3,7 +3,6 @@ import { fastifySwagger } from '@fastify/swagger'
 import { fastifySwaggerUi } from '@fastify/swagger-ui'
 import { fastify } from 'fastify'
 import {
-  type ZodTypeProvider,
   jsonSchemaTransform,
   serializerCompiler,
   validatorCompiler,
@@ -17,7 +16,7 @@ import { getSubscriberRankingPositionRoutes } from './routes/get-subscriber-rank
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 import { sendMessageRoute } from './routes/test-send-message'
 
-const app = fastify().withTypeProvider<ZodTypeProvider>()
+const app = fastify()
 
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
